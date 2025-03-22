@@ -1,0 +1,20 @@
+{
+  "name": "auth-module",
+  "version": "1.0.0",
+  "description": "a test package to implement authentication modules ",
+  "main": "index.js",
+  "scripts": {
+    "client" : "cd auth-pages/ && npm run dev",
+    "start": "concurrently --names \"server,client\" -c \"bgBlue.bold,bgMagenta.bold\" \"nodemon index.js\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
